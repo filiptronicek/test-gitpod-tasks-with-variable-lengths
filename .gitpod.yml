@@ -1,10 +1,12 @@
 image: gitpod/workspace-base
 
 tasks:
-  - name: Short Script Task
+  - name: Short Script Task 🐇
     init: sleep 20 && sudo du -h / --max-depth=1 
     command: echo 'start script'
   - name: Long Script task
-    init: sleep 200 && sudo du -h / --max-depth=1 
+    init: sleep 120 && sudo du -h / --max-depth=1 
     command: echo 'start script'
-
+  - name: A very long script task 🐢
+    init: sleep 240 && sudo du -h / --max-depth=1 
+    command: echo 'start script'
